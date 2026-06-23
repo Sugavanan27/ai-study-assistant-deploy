@@ -30,4 +30,4 @@ COPY . /app/backend/
 EXPOSE 8000
 
 # Run uvicorn server from the parent folder of backend/ package
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
